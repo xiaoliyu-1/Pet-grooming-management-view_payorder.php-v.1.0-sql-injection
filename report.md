@@ -39,7 +39,9 @@
 
 - During the security review of "Pet grooming management", discovered a critical SQL injection vulnerability in the "view_payorder.php" file. This vulnerability stems from insufficient user input validation of the 'sql' parameter, allowing attackers to inject malicious SQL queries. Therefore, attackers can gain unauthorized access to databases, modify or delete data, and access sensitive information. Immediate remedial measures are needed to ensure system security and protect data integrity.
 
-# No login or authorization is required to exploit this vulnerability
+#Login or authorization is required to exploit this vulnerability
+1、Log in to the system using the default password [mdkhairnar92@gmail.com](mailto:mdkhairnar92@gmail.com): admin
+2、By examining the /admin/view_payorder.php code, it was discovered that the sql2 parameter was concatenated in the SQL statement
 
 # Vulnerability details and POC
 
